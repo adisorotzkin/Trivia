@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectController">
+   <children>
+      <RadioButton fx:id="RB1" layoutX="314.0" layoutY="78.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="ans" />
+         </toggleGroup>
+      </RadioButton>
+      <Label fx:id="lblQ" layoutX="116.0" layoutY="33.0" prefHeight="25.0" prefWidth="459.0" />
+      <RadioButton fx:id="RB2" layoutX="314.0" layoutY="108.0" mnemonicParsing="false" toggleGroup="$ans" />
+      <RadioButton fx:id="RB3" layoutX="314.0" layoutY="138.0" mnemonicParsing="false" toggleGroup="$ans" />
+      <RadioButton fx:id="RB4" layoutX="314.0" layoutY="168.0" mnemonicParsing="false" toggleGroup="$ans" />
+      <Button layoutX="224.0" layoutY="206.0" mnemonicParsing="false" onAction="#OKPressed" text="OK" />
+      <Button layoutX="286.0" layoutY="206.0" mnemonicParsing="false" onAction="#nextPressed" text="next question" />
+      <Label fx:id="lblU" layoutX="61.0" layoutY="245.0" prefHeight="35.0" prefWidth="570.0" />
+      <Button layoutX="400.0" layoutY="206.0" mnemonicParsing="false" onAction="#endPressed" text="end game" />
+      <Label fx:id="lblEnd" layoutX="120.0" layoutY="397.0" prefHeight="98.0" prefWidth="478.0" />
+   </children>
+</AnchorPane>
